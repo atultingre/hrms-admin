@@ -6,8 +6,7 @@ import SideBarMenu from "./SideBarMenu";
 const { Sider } = Layout;
 
 const SideBar = () => {
-  const { collapsed,colorBgContainer } = useAuth();
-
+  const { collapsed, colorBgContainer } = useAuth();
 
   return (
     <div>
@@ -31,12 +30,12 @@ const SideBar = () => {
       >
         <div className="flex items-center justify-center text-white py-6">
           {!collapsed ? (
-            <span className="text-white font-semibold text-xl">Flexi</span>
+            <span className="text-white font-semibold text-xl">HR</span>
           ) : (
-            <span className="text-white font-semibold text-xl">Flexisales</span>
+            <span className="text-white font-semibold text-xl">HRMS</span>
           )}
         </div>
-        <SideBarMenu/>
+        <SideBarMenu />
       </Sider>
     </div>
   );
